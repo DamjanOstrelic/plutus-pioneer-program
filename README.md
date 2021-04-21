@@ -8,9 +8,24 @@
   - The (E)UTxO-model
   - Running an example auction contract on a local Playground
   - Homework
+
+- [Lecture #2](https://youtu.be/E5KRk5y9KjQ)
+
+  - Triggering change.
+  - Low-level, untyped on-chain validation scripts.
+  - High-level, typed on-chain validation scripts.
+
+- [Lecture #3](https://youtu.be/Lk1eIVm_ZTQ)
+
+  - Script context.
+  - Time handling.
+  - Parameterized contracts.
+
 ## Code Examples
 
 - Lecture #1: [English Auction](code/week01)
+- Lecture #2: [Simple Validation](code/week02)
+- Lecture #3: [Validation Context & Parameterized Contracts](code/week03)
 
 ## Exercises
 
@@ -27,6 +42,32 @@
   - Copy-paste the auction contract into the Playground editor - don't forget to remove the module header!
   - Compile.
   - Simulate various auction scenarios.
+
+- Week #2
+
+  - Fix and complete the code in the [Homework1](code/week02/src/Week02/Homework1.hs) module.
+  - Fix and complete the code in the [Homework2](code/week02/src/Week02/Homework2.hs) module.
+
+- Week #3
+
+  - Fix and complete the code in the [Homework1](code/week03/src/Week03/Homework1.hs) module.
+  - Fix and complete the code in the [Homework2](code/week03/src/Week03/Homework2.hs) module.
+
+
+## Solutions
+
+- Week #2
+
+  - [`Homework1`](code/week02/src/Week02/Solution1.hs)
+  - [`Homework2`](code/week02/src/Week02/Solution2.hs)
+
+## Some Plutus Modules
+
+- [`Plutus.V1.Ledger.Contexts`](https://github.com/input-output-hk/plutus/blob/master/plutus-ledger-api/src/Plutus/V1/Ledger/Contexts.hs), contains the definition of the context-related types.
+- [`Plutus.V1.Ledger.Interval`](https://github.com/input-output-hk/plutus/blob/master/plutus-ledger-api/src/Plutus/V1/Ledger/Interval.hs), contains the definition of and helper functions for the `Interval` type.
+- [`Plutus.V1.Ledger.Slot`](https://github.com/input-output-hk/plutus/blob/master/plutus-ledger-api/src/Plutus/V1/Ledger/Slot.hs), contains the definition of the `Slot` type.
+- [`PlutusTx.Data`](https://github.com/input-output-hk/plutus/blob/master/plutus-tx/src/PlutusTx/Data.hs), contains the definition of the `Data` type.
+- [`PlutusTx.IsData.Class`](https://github.com/input-output-hk/plutus/blob/master/plutus-tx/src/PlutusTx/IsData/Class.hs), defines the `IsData` class.
 
 ## Additional Resources
 
